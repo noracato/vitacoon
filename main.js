@@ -47,6 +47,7 @@ function makeCircle(x, y) {
 
 function vitacoon(x, y) {
     clearInterval(circleGen);
+    $('.calculating').addClass('inactive');
     done = true;
 
     let resultNo = Math.floor(Math.random() * colors.length);
@@ -59,6 +60,7 @@ function vitacoon(x, y) {
     setTimeout(
         function() {
             $('#' + resultNo).addClass('active');
+            $('.calculating').addClass('hide');
         }, 100
     );
 

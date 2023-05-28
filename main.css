@@ -46,13 +46,21 @@ body, html {
     transition: opacity ease 1s;
 }
 
-.vitacoon.show {
+.hide {
+    display: none;
+}
+.inactive {
+    opacity: 0;
+    transition: opacity ease 1s;
+}
+
+.show {
     display: block;
     opacity: 0;
     transition: opacity ease 1s;
 }
 
-.vitacoon.show.active {
+.show.active {
     transition: all ease 1s;
     opacity: 1;
 }
