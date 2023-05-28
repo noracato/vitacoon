@@ -1,6 +1,7 @@
 .container {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .circle {
@@ -8,10 +9,10 @@
     transform-origin: center;
     height: 200px;
     width: 200px;
-    border-color: blue;
+    /* border-color: blue; */
     border-radius: 50%;
-    border-width: 30%;
-    border-style: solid;
+    /* border-width: 30%; */
+    /* border-style: solid; */
     animation: normal grow 8s;
     opacity: 0;
     transform: scale(0.1)
@@ -22,7 +23,8 @@
         opacity: 1;
     }
     40% {
-        transform: scale(3)
+        transform: scale(3);
+        opacity: 1;
     }
 
     90% {
