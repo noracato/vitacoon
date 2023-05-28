@@ -7,8 +7,8 @@ let circleTimer = 1000;
 let colorNumber = 0;
 let colors = ['#634ea0', '#f9d49b', '#8a712f', '#e7c21f', '#76a56d', '#f89943', '#e42432',  ]
 
-$('.container').bind('mousedown touchstart', circlePop);
-$('.container').bind('mouseup touchend', function(){
+$('.scanner').bind('mousedown touchstart', circlePop);
+$('.scanner').bind('mouseup touchend', function(){
     clearInterval(circleGen);
     clearTimeout(doneTimer);
     // something with 'keep going' before the thing is done...
@@ -48,9 +48,6 @@ function makeCircle(x, y) {
 function vitacoon(x, y) {
     clearInterval(circleGen);
     done = true;
-    console.log('done');
-
-    // $('.circle').remove();
 
     let resultNo = Math.floor(Math.random() * colors.length);
 
@@ -62,16 +59,13 @@ function vitacoon(x, y) {
     setTimeout(
         function() {
             $('#' + resultNo).addClass('active');
-        }, 50
+        }, 100
     );
 
     setTimeout(
         function() {
             $('.container').css('background-color', colors[resultNo]);
+            $('.circle').remove();
         }, 5000
     );
-
-
-    // go to vitacooooooon -> color of circle of your coon!
-    // and un-hide the coon that was picked for you
 }
