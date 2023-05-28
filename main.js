@@ -1,4 +1,6 @@
-let minimalTime = 3000;
+let doneTime = 8000;
+let doneTimer;
+
 let circleGen;
 let circleTimer = 1000;
 let colorNumber = 0;
@@ -7,6 +9,7 @@ let colors = ['#634ea0', '#f9d49b', '#8a712f', '#e7c21f', '#f89943',   '#e42432'
 $('.container').bind('mousedown touchstart', circlePop);
 $('.container').bind('mouseup touchend', function(){
     clearInterval(circleGen);
+    clearTimeout(doneTimer);
     // something with 'keep going' before the thing is done...
 });
 
@@ -16,6 +19,7 @@ function circlePop(e) {
 
     makeCircle(e.pageX, e.pageY)
     circleGen = setInterval(function() {makeCircle(e.pageX, e.pageY)}, circleTimer);
+    doneTimer = setTimeout(vitacoon, doneTime);
 }
 
 function makeCircle(x, y) {
@@ -33,4 +37,9 @@ function makeCircle(x, y) {
     } else {
         colorNumber += 1;
     }
+}
+
+function vitacoon() {
+    clearInterval(circleGen);
+    console.log('done');
 }
