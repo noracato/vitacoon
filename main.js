@@ -67,7 +67,7 @@ function vitacoon(x, y) {
 
     setTimeout(
         function() {
-            $('.container').css('background-color', colors[resultNo]);
+            $('body').css('background-color', colors[resultNo]);
             $('.circle').remove();
         }, 5000
     );
