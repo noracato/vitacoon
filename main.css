@@ -1,11 +1,14 @@
 body, html {
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
 }
 
 .circle {
@@ -36,5 +39,27 @@ body, html {
     }
     100% {
         opacity: 0;
+    }
+}
+
+.main-color {
+    animation: normal grow-result 8s;
+}
+
+@keyframes grow-result {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        transform: scale(3);
+        opacity: 1;
+    }
+
+    90% {
+        transform: scale(100)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(100)
     }
 }

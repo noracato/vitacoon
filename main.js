@@ -23,7 +23,7 @@ function circlePop(e) {
 
     makeCircle(e.pageX, e.pageY)
     circleGen = setInterval(function() {makeCircle(e.pageX, e.pageY)}, circleTimer);
-    doneTimer = setTimeout(vitacoon, doneTime);
+    doneTimer = setTimeout(function() {vitacoon(e.pageX, e.pageY)}, doneTime);
 }
 
 function makeCircle(x, y) {
@@ -41,12 +41,29 @@ function makeCircle(x, y) {
     } else {
         colorNumber += 1;
     }
+
+    return circle;
 }
 
-function vitacoon() {
+function vitacoon(x, y) {
     clearInterval(circleGen);
     done = true;
     console.log('done');
+
+    // $('.circle').remove();
+
+    let resultNo = Math.floor(Math.random() * colors.length);
+
+    colorNumber = resultNo;
+    circle = makeCircle(x, y);
+    circle.addClass('main-color');
+
+    setTimeout(
+        function() {
+            $('.container').css('background-color', colors[resultNo]);
+        }, 5000
+    );
+
 
     // go to vitacooooooon -> color of circle of your coon!
     // and un-hide the coon that was picked for you
