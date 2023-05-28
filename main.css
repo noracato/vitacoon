@@ -13,14 +13,32 @@ body, html {
     flex-direction: column;
 }
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem 2rem;
     border-bottom: solid 1px black;
+    height: 4rem;
+}
+.dissappear {
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
 }
 .communication {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
+.communication.done {
+    margin-top: 0;
+    transition: margin-top 1s;
+}
+.calculating {
+    margin: auto auto 2rem;
+}
+
 .scanner {
     margin-bottom: 0;
     margin-top: auto;
@@ -51,6 +69,27 @@ body, html {
     transition: opacity ease 1s;
     overflow-y: scroll;
 }
+.vitacoon img {
+    padding: 10px 27px;
+    background-color: white;
+    border-radius: 50%;
+    height: 145px;
+    margin: 0 auto;
+}
+
+.coon-title {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.coon-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.description {
+    font-size: 1rem;
+}
 
 .hide {
     display: none;
@@ -61,7 +100,8 @@ body, html {
 }
 
 .show {
-    display: block;
+    display: flex;
+    flex-direction: column;
     opacity: 0;
     transition: opacity ease 1s;
 }
