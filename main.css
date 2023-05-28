@@ -37,6 +37,11 @@ body, html {
     border: 2px solid black;
 }
 
+.scanner.down {
+    height: 0;
+    transition: height 1s;
+}
+
 .vitacoon {
     font-size: 3rem;
     margin: auto;

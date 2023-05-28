@@ -61,7 +61,8 @@ function vitacoon(x, y) {
         function() {
             $('#' + resultNo).addClass('active');
             $('.calculating').addClass('hide');
-        }, 100
+            $('.scanner').addClass('down');
+        }, 2000
     );
 
     setTimeout(
