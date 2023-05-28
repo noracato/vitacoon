@@ -2,12 +2,11 @@ let minimalTime = 3000;
 let circleGen;
 let circleTimer = 1000;
 
-$('.container').mousedown(circlePop);
-$('.container').mouseup(function(){
+$('.container').bind('mousedown touchstart', circlePop);
+$('.container').bind('mouseup touchend', function(){
     clearInterval(circleGen);
-    // something with mouse up before the thing is done...
+    // something with 'keep going' before the thing is done...
 });
-
 
 
 function circlePop(e) {
