@@ -10,8 +10,9 @@ $('.container').bind('mouseup touchend', function(){
 
 
 function circlePop(e) {
-    makeCircle(e.pageX, e.pageY)
+    e.preventDefault();
 
+    makeCircle(e.pageX, e.pageY)
     circleGen = setInterval(function() {makeCircle(e.pageX, e.pageY)}, circleTimer);
 }
 

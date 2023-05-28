@@ -20,8 +20,12 @@
     0% {
         opacity: 1;
     }
+    40% {
+        transform: scale(30)
+    }
+
     90% {
-        transform: scale(10)
+        transform: scale(100)
     }
     100% {
         opacity: 0;
