@@ -49,6 +49,7 @@ body, html {
     display: none;
     opacity: 0;
     transition: opacity ease 1s;
+    overflow-y: scroll;
 }
 
 .hide {
