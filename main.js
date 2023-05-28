@@ -1,5 +1,6 @@
 let doneTime = 8000;
 let doneTimer;
+let done = false;
 
 let circleGen;
 let circleTimer = 1000;
@@ -16,6 +17,9 @@ $('.container').bind('mouseup touchend', function(){
 
 function circlePop(e) {
     e.preventDefault();
+    if (done) {
+        return;
+    }
 
     makeCircle(e.pageX, e.pageY)
     circleGen = setInterval(function() {makeCircle(e.pageX, e.pageY)}, circleTimer);
@@ -41,5 +45,9 @@ function makeCircle(x, y) {
 
 function vitacoon() {
     clearInterval(circleGen);
+    done = true;
     console.log('done');
+
+    // go to vitacooooooon -> color of circle of your coon!
+    // and un-hide the coon that was picked for you
 }
