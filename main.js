@@ -5,7 +5,7 @@ let done = false;
 let circleGen;
 let circleTimer = 1000;
 let colorNumber = 0;
-let colors = ['#634ea0', '#f9d49b', '#8a712f', '#e7c21f', '#f89943',   '#e42432',  ]
+let colors = ['#634ea0', '#f9d49b', '#8a712f', '#e7c21f', '#76a56d', '#f89943', '#e42432',  ]
 
 $('.container').bind('mousedown touchstart', circlePop);
 $('.container').bind('mouseup touchend', function(){
@@ -57,6 +57,13 @@ function vitacoon(x, y) {
     colorNumber = resultNo;
     circle = makeCircle(x, y);
     circle.addClass('main-color');
+
+    $('#' + resultNo).addClass('show');
+    setTimeout(
+        function() {
+            $('#' + resultNo).addClass('active');
+        }, 50
+    );
 
     setTimeout(
         function() {
