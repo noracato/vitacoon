@@ -60,6 +60,45 @@ body, html {
     transition: height 1s;
 }
 
+.results {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+}
+.result .ball{
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.result .ball .percentage {
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black;
+}
+
+.result .result-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.arrow {
+    margin: 0 auto;
+}
+
+.results:has(> .arrow) {
+    margin-top: 0;
+}
+
 .vitacoon {
     font-size: 3rem;
     margin: auto;
@@ -70,11 +109,11 @@ body, html {
     overflow-y: scroll;
 }
 .vitacoon img {
-    padding: 10px 27px;
+    padding: 23px 38px;
     background-color: white;
     border-radius: 50%;
-    height: 145px;
-    margin: 0 auto;
+    height: 115px;
+    margin: 0 auto 1rem;
 }
 
 .coon-title {

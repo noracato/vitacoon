@@ -51,7 +51,8 @@ function vitacoon(x, y) {
 
     done = true;
 
-    let resultNo = Math.floor(Math.random() * colors.length);
+    // let resultNo = Math.floor(Math.random() * colors.length);
+    let resultNo = 0;
 
     colorNumber = resultNo;
     circle = makeCircle(x, y);
