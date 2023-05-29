@@ -63,7 +63,7 @@ body, html {
     background-image: url(assets/fingerprint.png);
     background-size: 90%;
     background-repeat: no-repeat;
-    background-blend-mode: difference;
+    /* background-blend-mode: difference; */
     mix-blend-mode: difference;
 }
 
