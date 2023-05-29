@@ -30,7 +30,7 @@ body, html {
 }
 .communication {
     font-size: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0 0;
     display: flex;
     flex-direction: column;
     margin-top: auto;
@@ -43,6 +43,10 @@ body, html {
     margin: auto auto 2rem;
     font-size: 1.6rem;
     font-weight: 300;
+}
+.use-padding {
+    padding-right:2rem;
+    padding-left: 2rem;
 }
 
 .scanner {
@@ -124,17 +128,10 @@ body, html {
 .half-round {
     color: #000;
     margin-top: 1rem;
-}
-.half-round::before {
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: calc(100%);
     background-color: #fff;
     border-radius: 2rem 2rem 0 0;
-    z-index: -1;
-    left: 0;
-  }
+    padding-bottom: 2rem;
+}
 
 .coon-title {
     margin-top: 5vh;
