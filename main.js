@@ -17,6 +17,8 @@ $('.finger-spot').bind('mouseup touchend', function(){
     clearInterval(circleGen);
     clearTimeout(doneTimer);
 
+    $('.finger-spot').removeClass('active');
+
     $('#in-1').hide();
     $('#in-1').html('Analysing');
     $('#in-0').show();
@@ -25,9 +27,12 @@ $('.finger-spot').bind('mouseup touchend', function(){
 
 function circlePop(e) {
     e.preventDefault();
+
     if (done) {
         return;
     }
+
+    $('.finger-spot').addClass('active');
 
     makeCircle(e.pageX, e.pageY)
     circleGen = setInterval(function() {makeCircle(e.pageX, e.pageY)}, circleTimer);

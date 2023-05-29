@@ -63,8 +63,9 @@ body, html {
     background-image: url(assets/fingerprint.png);
     background-size: 90%;
     background-repeat: no-repeat;
+    transition: filter 0.5s;
 }
-.scanner .finger-spot:hover {
+.scanner .finger-spot.active {
     filter: invert(0.9);
 }
 
