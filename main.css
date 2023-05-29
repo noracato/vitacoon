@@ -54,8 +54,9 @@ body, html {
     margin: auto;
     height: 15vh;
     width: 15vh;
-    border-radius: 50%;
-    border: 1px solid black;
+    background-image: url(assets/fingerprint.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
 }
 
 .scanner.down {
