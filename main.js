@@ -12,8 +12,8 @@ let circleTimer = 1000;
 let colorNumber = 0;
 let colors = ['#634ea0', '#f9d49b', '#8a712f', '#e7c21f', '#76a56d', '#f89943', '#e42432',  ]
 
-$('.scanner').bind('mousedown touchstart', circlePop);
-$('.scanner').bind('mouseup touchend', function(){
+$('.finger-spot').bind('mousedown touchstart', circlePop);
+$('.finger-spot').bind('mouseup touchend', function(){
     clearInterval(circleGen);
     clearTimeout(doneTimer);
 
