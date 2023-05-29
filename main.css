@@ -127,7 +127,6 @@ body, html {
 
 .half-round {
     color: #000;
-    margin-top: 1rem;
     background-color: #fff;
     border-radius: 2rem 2rem 0 0;
     padding-bottom: 2rem;
@@ -141,7 +140,7 @@ body, html {
 }
 .result-title {
     margin-top: 2vh;
-    font-size: 2rem;
+    font-size: 1.6rem;
     letter-spacing: 1px;
     text-align: center;
 }
