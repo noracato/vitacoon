@@ -7,10 +7,6 @@
     <title>Find your Vitacoon</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=T+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
-
     <link rel="stylesheet" href="main.css" />
   </head>
 
@@ -21,12 +17,12 @@
         </div>
         <div class="communication">
             <div class="calculating">
-                <span id="in-0">Hold your finger still on the spot</span>
+                <span id="in-0">Hold your finger</span>
                 <span id="in-1" style="display:none;">Analysing</span>
             </div>
 
             <div class="vitacoon" id="0">
-                <div class="coon-title" style="text-align: center;">your result</div>
+                <div class="result-title">your result</div>
                 <div class="results">
                     <div class="result">
                         <div class="ball"><div class="percentage">13%</div></div>
@@ -45,7 +41,7 @@
                         <div class="result-subtitle">Activity</div>
                     </div>
                 </div>
-                <img src="assets/0.png"></img>
+                <div class="vitaball"><img src="assets/0.png"></img></div>
                 <div class="half-round">
                 <div class="coon-title">Pearly Power</div>
                 <div class="coon-subtitle">Bubble Tea flavoured fruit replacement</div>
@@ -70,7 +66,7 @@
                 </div>
             </div>
             <div class="vitacoon" id="1">
-                <div class="coon-title" style="text-align: center;">your result</div>
+                <div class="result-title">your result</div>
                 <div class="results">
                     <div class="result">
                         <div class="ball"><div class="percentage">86%</div></div>
@@ -89,7 +85,7 @@
                         <div class="result-subtitle">Mental<br/>Activity</div>
                     </div>
                 </div>
-                <img src="assets/1.png"></img>
+                <div class="vitaball"><img src="assets/1.png"></img></div>
                 <div class="half-round">
                 <div class="coon-title">Soft Sunlight</div>
                 <div class="coon-subtitle">Immediately relax with the taste of oat & almond milk</div>
@@ -99,7 +95,7 @@
                 </div>
             </div>
             <div class="vitacoon" id="2">
-                <div class="coon-title" style="text-align: center;">your result</div>
+                <div class="result-title">your result</div>
                 <div class="results">
                     <div class="result">
                         <div class="ball"><div class="percentage">48%</div></div>
@@ -118,7 +114,7 @@
                         <div class="result-subtitle">Blue</div>
                     </div>
                 </div>
-                <img src="assets/2.png"></img>
+                <div class="vitaball"><img src="assets/2.png"></img></div>
                 <div class="half-round">
                 <div class="coon-title">Sweet Dreams</div>
                 <div class="coon-subtitle">Espresso Martini flavoured sleep replacement</div>
@@ -143,7 +139,7 @@
                 </div>
             </div>
             <div class="vitacoon" id="3">
-                <div class="coon-title" style="text-align: center;">your result</div>
+                <div class="result-title">your result</div>
                 <div class="results">
                     <div class="result">
                         <div class="ball"><div class="percentage">91%</div></div>
@@ -162,7 +158,7 @@
                         <div class="result-subtitle">Busy</div>
                     </div>
                 </div>
-                <img src="assets/3.png"></img>
+                <div class="vitaball"><img src="assets/3.png"></img></div>
                 <div class="half-round">
                 <div class="coon-title">Mexican Fever</div>
                 <div class="coon-subtitle">Mescal and Lime flavoured burnout buster</div>
@@ -187,7 +183,7 @@
                 </div>
             </div>
             <div class="vitacoon" id="4">
-                <div class="coon-title" style="text-align: center;">your result</div>
+                <div class="result-title">your result</div>
                 <div class="results">
                     <div class="result">
                         <div class="ball"><div class="percentage">13%</div></div>
@@ -206,7 +202,7 @@
                         <div class="result-subtitle">Stress</div>
                     </div>
                 </div>
-                <img src="assets/4.png"></img>
+                <div class="vitaball"><img src="assets/4.png"></img></div>
                 <div class="half-round">
                 <div class="coon-title">New Moon</div>
                 <div class="coon-subtitle">Yoga ready with kombucha taste</div>
@@ -216,7 +212,7 @@
                 </div>
             </div>
             <div class="vitacoon" id="5">
-                <div class="coon-title" style="text-align: center;">your result</div>
+                <div class="result-title">your result</div>
                 <div class="results">
                     <div class="result">
                         <div class="ball"><div class="percentage">39%</div></div>
@@ -228,14 +224,14 @@
                     </div>
                     <div class="result">
                         <div class="ball"><div class="percentage">14%</div></div>
-                        <div class="result-subtitle">Mental</div>
+                        <div class="result-subtitle">Focus</div>
                     </div>
                     <div class="result">
                         <div class="ball"><div class="percentage">29%</div></div>
                         <div class="result-subtitle">Stress</div>
                     </div>
                 </div>
-                <img src="assets/5.png"></img>
+                <div class="vitaball"><img src="assets/5.png"></img></div>
                 <div class="half-round">
                 <div class="coon-title">Natural Focus</div>
                 <div class="coon-subtitle">Instant ADHD relief with the taste of natural orange wine</div>
@@ -260,7 +256,7 @@
                 </div>
             </div>
             <div class="vitacoon" id="6">
-                <div class="coon-title" style="text-align: center;">your result</div>
+                <div class="result-title">your result</div>
                 <div class="results">
                     <div class="result">
                         <div class="ball"><div class="percentage">13%</div></div>
@@ -279,7 +275,7 @@
                         <div class="result-subtitle">Energy</div>
                     </div>
                 </div>
-                <img src="assets/6.png"></img>
+                <div class="vitaball"><img src="assets/6.png"></img></div>
                 <div class="half-round">
                 <div class="coon-title">Hot ’n Happy</div>
                 <div class="coon-subtitle">Get ready to go out with the taste of Spicy BBQ Chicken</div>

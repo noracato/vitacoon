@@ -16,10 +16,11 @@ body, html {
     flex-direction: column;
 }
 .title {
-    font-size: 2rem;
-    padding: 2rem 2rem 0;
+    font-size: 2.2rem;
+    padding: 8vh 2rem 0;
     border-bottom: solid 1px black;
     height: 4rem;
+    font-weight: 600;
 }
 .dissappear {
     padding: 0;
@@ -40,7 +41,7 @@ body, html {
 }
 .calculating {
     margin: auto auto 2rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
@@ -77,15 +78,16 @@ body, html {
 .result .ball{
     height: 4rem;
     width: 4rem;
-    background-color: white;
+    background-color: #ffffff69;
     display: flex;
     border-radius: 50%;
     margin: 0 auto;
+    border: solid 1px white;
 }
 
 .result .ball .percentage {
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: black;
 }
@@ -93,7 +95,8 @@ body, html {
 .result .result-subtitle {
     font-size: 1rem;
     font-weight: 300;
-    margin: 0 auto;
+    margin: 1rem auto;
+    letter-spacing: 1px;
 }
 
 .vitacoon {
@@ -106,11 +109,17 @@ body, html {
     overflow-y: scroll;
 }
 .vitacoon img {
-    padding: 23px 38px;
+    height: 115px;
+    margin: auto;
+}
+.vitaball {
     background-color: white;
     border-radius: 50%;
-    height: 115px;
+    padding: 3vh;
     margin: 0 auto 1rem;
+    height: 150px;
+    width: 150px;
+    display: flex;
 }
 
 .half-round {
@@ -133,6 +142,13 @@ body, html {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+.result-title {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
 }
 .coon-subtitle {
     font-size: 1rem;
