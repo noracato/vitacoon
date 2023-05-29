@@ -7,14 +7,15 @@ body, html {
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
     display: flex;
     flex-direction: column;
 }
 .title {
     font-size: 2rem;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem 0;
     border-bottom: solid 1px black;
     height: 4rem;
 }
@@ -37,6 +38,7 @@ body, html {
 }
 .calculating {
     margin: auto auto 2rem;
+    font-size: 1.8rem;
 }
 
 .scanner {
@@ -89,14 +91,6 @@ body, html {
     font-size: 1rem;
     font-weight: 300;
     margin: 0 auto;
-}
-
-.arrow {
-    margin: 0 auto;
-}
-
-.results:has(> .arrow) {
-    margin-top: 0;
 }
 
 .vitacoon {
