@@ -181,7 +181,7 @@ body, html {
 }
 
 .main-color {
-    animation: normal grow-result 8s;
+    animation: normal grow-result 10s;
 }
 
 @keyframes grow-result {

@@ -16,7 +16,10 @@ $('.scanner').bind('mousedown touchstart', circlePop);
 $('.scanner').bind('mouseup touchend', function(){
     clearInterval(circleGen);
     clearTimeout(doneTimer);
-    // something with 'keep going' before the thing is done...
+
+    $('#in-1').hide();
+    $('#in-1').html('Analysing');
+    $('#in-0').show();
 });
 
 
@@ -32,6 +35,8 @@ function circlePop(e) {
 }
 
 function makeCircle(x, y) {
+    analyzing()
+
     let circle = $('<div></div>');
     circle.addClass('circle');
     circle.css('background-color', colors[colorNumber])
@@ -48,6 +53,15 @@ function makeCircle(x, y) {
     }
 
     return circle;
+}
+
+function analyzing() {
+    $('#in-0').hide();
+    $('#in-1').show();
+
+    $('#in-1').html(function(_, currentcontent){
+        return currentcontent + '.';
+    })
 }
 
 function vitacoon(x, y) {
